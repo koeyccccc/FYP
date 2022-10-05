@@ -33,6 +33,8 @@
   ======================================================== -->
 </head>
 
+https://docs.google.com/forms/d/e/1FAIpQLSe-G1Zl4h3pXcVfkdiVL8iNgKM1RO1l8C5iIs2UlV8ylZeYkw/viewform?usp=pp_url&entry.205120152=NameAns&entry.1196816337=EmailAns&entry.1761669623=SubjectAns&entry.135284626=MessageAns
+  
 <body>
 
   <!-- ======= Navbar ======= -->
@@ -92,24 +94,29 @@
         <div class="row">
           <div class="col-md-6 mb-5 mb-md-0" data-aos="fade-up">
 
-            <form action="https://formsubmit.co/koey0112@gmail.com" method="post" role="form" class="php-email-form">
+            <form id="gform" name="gform" target="hidden_iframe" onsumbit="submitted=true;"
+            action="https://docs.google.com/forms/d/e/1FAIpQLSe-G1Zl4h3pXcVfkdiVL8iNgKM1RO1l8C5iIs2UlV8ylZeYkw/formResponse?" method="post" role="form" class="php-email-form">
 
               <div class="row gy-3">
                 <div class="col-md-6 form-group">
-                  <label for="name">Name</label>
-                  <input type="text" name="name" class="form-control" id="name" required>
+                  <label for="entry.205120152">Name</label>
+                  <input type="text" name="entry.205120152" class="form-control" id="entry.205120152" required>
                 </div>
+                
                 <div class="col-md-6 form-group">
-                  <label for="name">Email</label>
-                  <input type="email" class="form-control" name="email" id="email" required>
+                  <label for="entry.1196816337">Email</label>
+                  <input type="email" name="entry.1196816337" name="email" id="entry.1196816337" required>
                 </div>
+                
                 <div class="col-md-12 form-group">
-                  <label for="name">Subject</label>
-                  <input type="text" class="form-control" name="subject" id="subject" required>
+                  <label for="entry.1761669623">Subject</label>
+                  <input type="text" name="entry.1761669623" name="subject" id="entry.1761669623" required>
                 </div>
+                
                 <div class="col-md-12 form-group">
-                  <label for="name">Message</label>
-                  <textarea class="form-control" name="message" cols="30" rows="10" required></textarea>
+                  <label for="entry.135284626">Message</label>
+                  <textarea name="entry.135284626" name="message" cols="30" id="entry.135284626"
+                  rows="10" required></textarea>
                 </div>
 
                 <div class="col-md-12 my-3">
@@ -124,6 +131,13 @@
               </div>
 
             </form>
+            
+            <iframe name"hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){}"></iframe>
+            
+            <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+            <script type="text/javascript">
+              var submitted = false;
+            </script>
 
           </div>
 
