@@ -92,43 +92,36 @@
         <div class="row">
           <div class="col-md-6 mb-5 mb-md-0" data-aos="fade-up">
 
-                  <form target="hidden_iframe" onsumbit="submitted=true;"
-            action="https://docs.google.com/forms/d/e/1FAIpQLSe-G1Zl4h3pXcVfkdiVL8iNgKM1RO1l8C5iIs2UlV8ylZeYkw/formResponse?" method="post" role="form" class="php-email-form">
+                 <form action="https://formspree.io/koey0112@gmail.com" method="post" role="form" class="php-email-form">
 
-              <div class="row gy-3">
-                <div class="col-md-6 form-group">
-                  <label for="entry.205120152">Name</label>
-                  <input type="text" name="entry.205120152" class="form-control" id="entry.205120152" required>
-                </div>
-                
-                <div class="col-md-6 form-group">
-                  <label for="entry.1196816337">Email</label>
-                  <input type="email" class="entry.1196816337" name="email" id="entry.1196816337" required>
-                </div>
-                
-                <div class="col-md-12 form-group">
-                  <label for="entry.1761669623">Subject</label>
-                  <input type="text" class="entry.1761669623" name="subject" id="entry.1761669623" required>
-                </div>
-                
-                <div class="col-md-12 form-group">
-                  <label for="entry.135284626">Message</label>
-                  <textarea class="entry.135284626" name="message" cols="30" id="entry.135284626"
-                  rows="10" required></textarea>
-                </div>
-
-                <div class="col-md-12 my-3">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-                </div>
-
-                <div class="col-md-6 mt-0 form-group">
-                  <input type="submit" class="readmore d-block w-100" value="Send Message">
-                </div>
-              </div>
-
-            </form>
+                    <div class="row gy-3">
+                      <div class="col-md-6 form-group">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" class="form-control" id="name" required>
+                      </div>
+                      <div class="col-md-6 form-group">
+                        <label for="name">Email</label>
+                        <input type="email" class="form-control" name="email" id="email" required>
+                      </div>
+                      <div class="col-md-12 form-group">
+                        <label for="name">Subject</label>
+                        <input type="text" class="form-control" name="subject" id="subject" required>
+                      </div>
+                      <div class="col-md-12 form-group">
+                        <label for="name">Message</label>
+                        <textarea class="form-control" name="message" cols="30" rows="10" required></textarea>
+                      </div>
+      
+                      <div class="col-md-12 my-3">
+                        <div class="loading">Loading</div>
+                        <div class="error-message"></div>
+                        <div class="sent-message">Your message has been sent. Thank you!</div>
+                      </div>
+      
+                      <div class="col-md-6 mt-0 form-group">
+                        <input type="submit" class="readmore d-block w-100" value="Send Message">
+                      </div>
+                    </div>
             
             <iframe name"hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){}"></iframe>
             
